@@ -1,8 +1,9 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import Services from './Services.astro'
 import About from './About.astro'
-import Features from './Features.astro'
 import Register from './Register.astro'
+import Map from './Map.astro'
 
 interface Props {
   afterTitle: string,
@@ -15,13 +16,17 @@ const { afterTitle, sect, title, type } = Astro.props
 const { Content } = await sect.render()
 ---
 
-{type === 'about' && <About title={title}>
+{type === 'services' && <Services title={title}>
+  <Content />
+</Services>}
+
+{type === 'about' && <About afterTitle={afterTitle} title={title}>
   <Content />
 </About>}
 
-{type === 'features' && <Features afterTitle={afterTitle} title={title}>
+{type === 'map' && <Map title={title}>
   <Content />
-</Features>}
+</Map>}
 
 {type === 'register' && <Register title={title}>
   <Content />

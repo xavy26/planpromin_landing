@@ -4,8 +4,9 @@ import siteData from "../data/site.json";
 const pn = Astro.url.pathname;
 const isHome = pn === "/";
 const site = Astro.site;
+const servLink = isHome ? "#services" : `${site}#services`;
 const abtLink = isHome ? "#about" : `${site}#about`;
-const ftLink = isHome ? "#features" : `${site}#features`;
+const mapLink = isHome ? "#map" : `${site}#map`;
 const regLink = isHome ? "#register" : `${site}#register`;
 ---
 
@@ -16,10 +17,10 @@ const regLink = isHome ? "#register" : `${site}#register`;
     class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
   >
     <a href={Astro.site} class="no-underline">
-      <img src="img/logo.svg" alt="PLANPROMIN S.A" class="h-12 py-1" />
+      <img src="img/logo.svg" alt={siteData.title} class="h-12 py-1" />
     </a>
     <h2 class="relative block p-4 lg:p-6 text-xl text-white font-bold">
-      PLANPROMIN S.A
+      {siteData.title}
     </h2>
     <button
       id="menuBtn"
@@ -38,19 +39,23 @@ const regLink = isHome ? "#register" : `${site}#register`;
   >
     <a
       class="text-white font-bold hover:text-purple-600 text-lg text-center w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1"
-      href={abtLink}>Servicios</a
+      href={servLink}>Servicios</a
     >
     <a
       class="text-white font-bold hover:text-purple-600 text-lg text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
-      href={ftLink}>Quienes somos</a
+      href={abtLink}>Quienes somos</a
     >
     <a
       class="text-white font-bold hover:text-purple-600 text-lg text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
-      href={ftLink}>Material de proceso</a
+      href={abtLink}>Material de proceso</a
     >
     <a
       class="text-white font-bold hover:text-purple-600 text-lg text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
-      href={ftLink}>Nuestros proyectos</a
+      href={mapLink}>Nuestros proyectos</a
+    >
+    <a
+      class="text-white font-bold hover:text-purple-600 text-lg text-center w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1"
+      href={regLink}>Contactanos</a
     >
   </div>
   <div class="inline-flex pr-10 sm:pr-0" id="main_menu">

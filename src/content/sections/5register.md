@@ -1,5 +1,5 @@
 ---
-title: Registration
+title: Contactanos
 type: register
 ---
 

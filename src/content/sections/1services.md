@@ -1,6 +1,6 @@
 ---
-title: AWE.SOME Heading
-type: about
+title: Servicios de procesamiento
+type: services
 ---
 
 Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt. Vivamus vitae erat vel tellus condimentum consectetur.
