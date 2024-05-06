@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Concentración Gravimetica",
+    "image": "img/services/concetracion_gravimetica.jpeg",
+    "desc": "La concentración gravimétrica es un proceso de separación de partículas minerales en base a su peso específico. Este proceso se basa en la diferencia de densidad entre las partículas minerales y la ganga. La concentración gravimétrica es uno de los procesos más antiguos de la minería y ha sido utilizado por siglos en la recuperación de oro y otros minerales pesados."
+  },
+  {
+    "title": "Procesos Metalúrgicos",
+    "image": "img/services/procesos_metalurgicos.jpeg",
+    "desc": "Los procesos metalúrgicos son un conjunto de operaciones que se realizan en la industria minera para la obtención de metales a partir de minerales. Estos procesos incluyen la concentración de minerales, la extracción de metales, la fundición y la refinación de metales."
+  },
+  {
+    "title": "Relaveras Reprocesamiento",
+    "image": "img/services/relavera.jpeg",
+    "desc": "El reprocesamiento de relaveras es un proceso de recuperación de minerales valiosos que quedan en las relaveras después de la extracción de los metales principales. Este proceso se realiza con el objetivo de recuperar los minerales valiosos que quedan en las relaveras y reducir el impacto ambiental de las operaciones mineras."
+  },
+  {
+    "title": "Planta de Elución",
+    "image": "img/services/planta_elucion.jpeg",
+    "desc": "La planta de elución es una instalación industrial que se utiliza en la industria minera para la recuperación de oro y otros metales preciosos de soluciones cianuradas. Este proceso se realiza mediante la desorción de los metales preciosos de los carbones activados y su posterior recuperación en forma de lingotes de oro."
+  },
+  {
+    "title": "Comercialización y Exportación",
+    "image": "img/services/comercializacion_exportacion.jpeg",
+    "desc": "La comercialización y exportación de minerales es un proceso que se realiza en la industria minera para la venta de minerales a nivel nacional e internacional. Este proceso incluye la negociación de precios, la logística de transporte y la gestión de los trámites aduaneros necesarios para la exportación de minerales."
+  },
+  {
+    "title": "Inversiones",
+    "image": "img/services/about4.jpeg",
+    "desc": "Las inversiones en la industria minera son un proceso que se realiza para la adquisición de activos mineros, la exploración de nuevos yacimientos minerales, la construcción de nuevas plantas de procesamiento y la expansión de las operaciones mineras existentes. Las inversiones en la industria minera son una forma de generar valor para los accionistas y contribuir al desarrollo económico de los países."
+  }
+]

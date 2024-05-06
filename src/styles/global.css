@@ -27,7 +27,7 @@ html {
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #7c3aed;
+    background-color: #6b7280;
   }
 }
 
@@ -50,7 +50,7 @@ html {
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: #333;
+  background: #fff;
 }
 
 .hamburger__top-bun {

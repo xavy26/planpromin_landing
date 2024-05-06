@@ -50,11 +50,11 @@ const ftLink = isHome
   </span>
 </div>
 <div class="">
-  <a id="btt" class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md" href="#top" title="Back to Top">UP</a>
+  <a id="btt" class="hidden fixed bottom-0 rounded-full right-0 mx-4 my-4 text-gray-200 border border-gray-500 hover:bg-gray-200 hover:text-gray-500 hover:border-browngray no-underline px-6 py-1 bg-gray-500 shadow-md" href="#top" title="Back to Top">UP</a>
 </div>
 <!-- "Follow" Tooltip template -->
 <template id="followTip">
   {siteData.social.map((scm) => (
-    <a href={scm.url} class="inline-block text-gray-200 text-sm bg-purple-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1" target="_blank" rel="noopener">{scm.title}</a>
+    <a href={scm.url} class="inline-block text-gray-200 text-sm bg-gray-500 shadow-md hover:bg-gray-100 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1" target="_blank" rel="noopener">{scm.title}</a>
   ))}
 </template>

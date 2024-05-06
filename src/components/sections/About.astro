@@ -1,13 +1,11 @@
 ---
-import features from "../../data/features.json";
-
 interface Props {
   afterTitle?: string;
   title: string;
 }
 
 const site = Astro.site;
-const { afterTitle, title } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <div
@@ -15,7 +13,7 @@ const { afterTitle, title } = Astro.props;
   class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200 py-12"
 >
   <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px-0">
-    <h2 class="tracking-wide text-green-600 font-bold text-4xl mb-4">
+    <h2 class="tracking-wide text-green-400 font-bold text-4xl mb-4">
       {title}
     </h2>
     <div class="font-light text-black text-xl mb-6">
@@ -28,21 +26,14 @@ const { afterTitle, title } = Astro.props;
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+          src="img/abouts/about1.jpg"
           alt=""
         />
       </div>
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+          src="img/abouts/about2.jpg"
           alt=""
         />
       </div>
@@ -51,44 +42,21 @@ const { afterTitle, title } = Astro.props;
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+          src="img/abouts/about3.jpg"
           alt=""
         />
       </div>
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+          src="img/abouts/about4.jpg"
           alt=""
         />
       </div>
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+          src="img/abouts/about5.jpg"
           alt=""
         />
       </div>
@@ -97,21 +65,37 @@ const { afterTitle, title } = Astro.props;
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+          src="img/abouts/about6.jpg"
           alt=""
         />
       </div>
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+          src="img/abouts/about7.jpg"
           alt=""
         />
       </div>
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+          src="img/abouts/about8.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="grid gap-4">
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="img/abouts/about9.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="img/abouts/about10.jpg"
           alt=""
         />
       </div>
