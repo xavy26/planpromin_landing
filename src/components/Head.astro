@@ -6,11 +6,6 @@ interface Props {
   title?: string
 }
 
-const { image, title } = Astro.props
-// const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-const imageURL = image
-  ? new URL(image, Astro.site)
-  : undefined
 ---
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,19 +13,11 @@ const imageURL = image
 <!-- PRELOAD CDN SCRIPTS -->
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+<link rel="icon" href="img/logo.svg">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content={siteData.description}>
 <meta name="author" content={siteData.author}>
 <meta name="robots" content="index,follow">
-
-<!-- BEGIN SOCIAL META DATA -->
-<meta property="og:site_name" content={siteData.title}>
-<meta property="og:title" content={siteData.title}>
-<meta property="og:description" content=}>
-<!-- <meta property="og:url" content={canonicalURL}> -->
-<meta name="twitter:card" content={imageURL ? 'summary_large_image' : 'summary' }>
-{imageURL && <meta property="og:image" content={imageURL}>}
-<!-- ./END SOCIAL META DATA -->
 
 <meta name="theme-color" content="#ffffff">
 <title>{siteData.title}</title>
