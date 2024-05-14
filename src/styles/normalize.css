@@ -93,11 +93,6 @@ img {
   border-style: none;
 }
 
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
 [hidden] {
   display: none !important;
 }
