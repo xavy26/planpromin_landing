@@ -17,12 +17,14 @@ const regLink = isHome ? "#register" : `${site}#register`;
   <div
     class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
   >
-    <a href={Astro.site} class="no-underline">
+    <a href="#top" class="no-underline cursor-pointer">
       <img src="img/logo.svg" alt={siteData.title} class="h-12 py-1" />
     </a>
-    <h2 class="relative block p-4 lg:p-6 text-xl text-white font-bold">
-      {siteData.title}
-    </h2>
+    <a href="#top" class="cursor-pointer">
+      <h2 class="relative block p-4 lg:p-6 text-xl text-white font-bold cursor-pointer">
+        {siteData.title}
+      </h2>
+    </a>
     <button
       id="menuBtn"
       class="hamburger block sm:hidden focus:outline-none"
