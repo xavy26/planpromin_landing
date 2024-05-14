@@ -9,7 +9,7 @@ const { title } = Astro.props;
 
 <div
   id="map"
-  class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100 py-12"
+  class="mx-auto w-full min-h-screen flex flex-col justify-center items-center bg-gray-100 py-12"
 >
   <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px-0">
     <h2 class="tracking-wide text-green-400 font-bold text-4xl mb-16">
@@ -17,11 +17,16 @@ const { title } = Astro.props;
     </h2>
   </div>
 
-  <div class="w-2/3 min-h-96" id="mapbox"></div>
+  <div
+    class="w-2/3 mx-auto min-h-[32rem] justify-center self-center text-center shadow-lg"
+    id="mapbox"
+  >
+  </div>
 </div>
 
 <script>
   import mapboxgl from "mapbox-gl";
+
   mapboxgl.accessToken =
     "pk.eyJ1IjoieGF2eTI2MDMiLCJhIjoiY2x2b2FxN3N5MG40ODJqbGxlaWVmb2FmeSJ9.81UW7tSph7ikowQkHTvuzw";
   const map = new mapboxgl.Map({
@@ -30,19 +35,20 @@ const { title } = Astro.props;
     zoom: 14,
     center: [-79.676977, -2.985174],
     scrollZoom: false,
+    attributionControl: false,
   });
-  // Add zoom and rotation controls to the map.
-  map.addControl(new mapboxgl.NavigationControl());
 
-  const marker = new mapboxgl.Marker({
-    color: "#FF0000",
-  }).setLngLat([-79.655977, -2.958574])
-    .addTo(map);
-
+  // const marker = new mapboxgl.Marker({
+  //   color: "#FF0000"
+  // }).setLngLat([-79.655977, -2.958574])
+  //   .addTo(map);
 </script>
 
 <style>
-  #mapbox {
-    height: 600px;
+  #mapbox .mapboxgl-control-container {
+    display: none;
+  }
+  .mapboxgl-ctrl-bottom-right {
+    display: none;
   }
 </style>
