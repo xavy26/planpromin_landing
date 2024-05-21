@@ -1,15 +1,26 @@
 ---
+const apiKey = '19b6a99e978da10bee647275751c2035';
+const url = `https://api.metalpriceapi.com/v1/latest?api_key=${apiKey}&base=USD&currencies=XAU,XAG`;
+const resp = await fetch(url);
+let gold = 0, silver = 0, copper = 0;
+if (resp.status === 200) {
+  const data = await resp.json();
+  gold = data.rates.XAU;
+  silver = data.rates.XAG;
+} else {
+  console.error('Error', resp.status);
+}
 const minValues =[
   {
     name: 'Oro',
-    value: 2319.455,
-    variation: -0.19,
+    value: parseFloat((1 / gold).toFixed(5)),
+    variation: parseFloat(gold.toFixed(5)),
     color: 'text-yellow-400'
   },
   {
     name: 'Plata',
-    value: 26.63950,
-    variation: -0.68,
+    value: parseFloat((1 / silver).toFixed(5)),
+    variation: parseFloat(silver.toFixed(5)),
     color: 'text-gray-400'
   },
   {
