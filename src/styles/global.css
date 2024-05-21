@@ -27,7 +27,7 @@ html {
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #6b7280;
+    background-color: #2b8c68;
   }
 }
 
@@ -44,13 +44,13 @@ html {
   position: absolute;
   width: 24px;
   height: 2px;
-  background: #000;
+  background: #fff;
   transform: rotate(0);
   transition: all 0.5s;
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: #fff;
+  background: #31c48d;
 }
 
 .hamburger__top-bun {
