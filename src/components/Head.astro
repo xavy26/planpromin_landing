@@ -1,23 +1,30 @@
 ---
-import siteData from '../data/site.json'
+import siteData from "../data/site.json";
 
 interface Props {
-  image?: string,
-  title?: string
+  image?: string;
+  title?: string;
 }
-
 ---
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- PRELOAD CDN SCRIPTS -->
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-<link rel="icon" href="img/logo.svg">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content={siteData.description}>
-<meta name="author" content={siteData.author}>
-<meta name="robots" content="index,follow">
+<script src="https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js"></script>
+<link
+  href="https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="icon" href="img/logo.svg" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content={siteData.description} />
+<meta name="author" content={siteData.author} />
+<meta name="robots" content="index,follow" />
 
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#ffffff" />
 <title>{siteData.title}</title>
