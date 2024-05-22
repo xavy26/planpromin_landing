@@ -13,14 +13,14 @@ if (resp.status === 200) {
 const minValues =[
   {
     name: 'Oro',
-    value: parseFloat((1 / gold).toFixed(5)),
-    variation: parseFloat(gold.toFixed(5)),
+    value: parseFloat((1 / gold).toFixed(4)),
+    variation: parseFloat(gold.toFixed(4)),
     color: 'text-yellow-400'
   },
   {
     name: 'Plata',
-    value: parseFloat((1 / silver).toFixed(5)),
-    variation: parseFloat(silver.toFixed(5)),
+    value: parseFloat((1 / silver).toFixed(4)),
+    variation: parseFloat(silver.toFixed(4)),
     color: 'text-gray-400'
   },
   {
@@ -30,13 +30,15 @@ const minValues =[
     color: 'text-red-400'
   }
 ]
+
 ---
-<div class="md:mx-24 sm:mx-0 my-16 z-10 bg-gray-100 md:rounded-full sm:rounded-3xl shadow absolute bottom-0 self-center">
-  <div class="grid gap-5 mx-24 sm:mx-12 my-0 md:grid-cols-3 sm:grid-cols-1">
+
+<div class=" mx-8 md:mx-24 sm:mx-0 my-16 z-10 bg-white rounded-2xl md:rounded-full shadow-2xl absolute bottom-0 self-center">
+  <div class="grid gap-5 mx-12 md:24 my-4 md:my-0 md:grid-cols-3 sm:grid-cols-1">
     {
       minValues.map((item) => (
         <div class="overflow-hidden text-center">
-          <div class="px-4 py-4 lg:p-6">
+          <div class="px-0 md:px-4 py-2 md:py-4 lg:p-6">
             <dl>
               <dt class={`text-2xl font-bold leading-5 ${item.color} truncate`}>
                 {item.name}

@@ -2,11 +2,11 @@
 import HeaderCard from '../HeaderCard.astro'
 import Navbar from '../Navbar.astro'
 ---
-<header class="header w-full min-h-screen flex flex-col justify-between">
+<header class="header md:w-full h-full md:h-auto min-h-screen flex flex-col justify-between bg-white">
   <Navbar />
   <HeaderCard />
   
-  <video class="object-cover -z-0" preload="true" autoplay loop src="videos/header_video.mp4"></video>
+  <video class="object-cover -z-0 h-full" preload="true" autoplay loop src="videos/header_video.mp4"></video>
   
 </header>
 
@@ -14,6 +14,6 @@ import Navbar from '../Navbar.astro'
   video {
     top: 50%;
     left: 50%;
-    height: inherit;
+    height: max-content;
   }
 </style>

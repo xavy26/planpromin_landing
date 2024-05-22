@@ -1,6 +1,5 @@
 ---
 import siteData from "../data/site.json";
-import Icon from "../../public/icons/globo.svg";
 
 const pn = Astro.url.pathname;
 const isHome = pn === "/";
@@ -57,7 +56,7 @@ const contLink = isHome ? "#contact" : `${site}#contact`;
       href={contLink}>Contactanos</a
     >
   </div>
-  <div class="pr-24 sm:mr-0" id="main_menu">
+  <div class="md:pr-24 sm:mr-0" id="main_menu">
     <ul class="flex flex-wrap md:m-2 text-sm md:text-base" id="menu_nav">
       <li class="relative mx-1 px-1 py-2 group mb-1 md:mb-0" id="button_admin">
         <a class="w-6 h-6 font-semibold text-white hover:text-green-400 justify-center">
