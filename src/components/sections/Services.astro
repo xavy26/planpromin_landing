@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+let open = false;
 ---
 
 <div
@@ -18,17 +19,71 @@ const { title } = Astro.props;
       {title}
     </h2>
   </div>
-  <div
-    class="px-16 md:grid md:grid-cols-4 md:gap-8 lg:gap-12 xl:gap-16 dark:bg-gray-900"
-  >
-    {
-      abouts.map((about, index) => (
-        <ServiceModal
-          title={about.title}
-          description={about.desc}
-          image={about.image} 
-        />
-      ))
-    }
+  <div class="cont">
+    <div class="swiper mySwiper">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-wrapper">
+        {
+          abouts.map((about) => (
+            <div class="swiper-slide">
+              <ServiceModal
+                title={about.title}
+                description={about.desc}
+                image={about.image}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+  .cont {
+    height: 100%;
+    width: 100%;
+  }
+  .cont .swiper {
+    width: 100%;
+    padding: 10px 60px;
+  }
+  .container .swiper-slide {
+    position: relative;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    /* left: -40px; */
+    color: #31c48d;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .swiper-button-next {
+    /* right: -40px; */
+    z-index: 100;
+    color: #31c48d;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+</style>
+
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script is:inline>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

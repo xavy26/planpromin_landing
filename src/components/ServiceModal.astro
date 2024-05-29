@@ -5,11 +5,11 @@ interface Props {
   image: string;
 }
 
-const {title, description, image} = Astro.props;
+const {title, description, image } = Astro.props;
 ---
-<div x-data="{ open: false }" data-carousel-item>
-  <div x-on:click="open = true" class="bg-white rounded-2xl shadow-lg z-10 cursor-pointer">
-    <div class="p-5 z-20">
+<div x-data="{ open: false }">
+  <div x-on:click="open = true" class="bg-white rounded-2xl shadow-lg cursor-pointer">
+    <div class="p-5 z-50">
       <h3 class="font-bold text-lg line-clamp-1">
         { title }
       </h3>
@@ -25,7 +25,7 @@ const {title, description, image} = Astro.props;
   <!-- MODAL -->
   <div
     x-show="open"
-    class="min-w-3/4 fixed inset-0 px-2 z-20 overflow-hidden flex items-center justify-center"
+    class="min-w-3/4 fixed inset-0 px-2 z-50 flex items-center justify-center overflow-auto"
   >
     <div
       x-show="open"
@@ -35,19 +35,20 @@ const {title, description, image} = Astro.props;
       x-transition:leave="transition-opacity ease-in duration-300"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
-      class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+      class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity overflow-y-auto"
     >
     </div>
     <!-- Modal Content -->
     <div
       x-show="open"
+      @click.away="open = false"
       x-transition:enter="transition-transform ease-out duration-300"
       x-transition:enter-start="transform scale-75"
       x-transition:enter-end="transform scale-100"
       x-transition:leave="transition-transform ease-in duration-300"
       x-transition:leave-start="transform scale-100"
       x-transition:leave-end="transform scale-75"
-      class="bg-white pt-6 rounded-2xl shadow-xl overflow-hidden min-w-screen-lg w-full lg:w-2/3 xl:w-1/3 z-50"
+      class="realtive bg-white pt-6 rounded-2xl shadow-xl overflow-hidden min-w-screen-lg w-full lg:w-2/3 xl:w-1/3 z-50"
     >
       <!-- Modal Header -->
       <div

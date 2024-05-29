@@ -1,7 +1,7 @@
 [
   {
     "title": "Concentración Gravimetica",
-    "image": "img/services/concetracion_gravimetica.jpeg",
+    "image": "img/services/concetracion_gravimetica.png",
     "desc": "La concentración gravimétrica es un proceso de separación de partículas minerales en base a su peso específico. Este proceso se basa en la diferencia de densidad entre las partículas minerales y la ganga. La concentración gravimétrica es uno de los procesos más antiguos de la minería y ha sido utilizado por siglos en la recuperación de oro y otros minerales pesados."
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "title": "Planta de Elución",
-    "image": "img/services/planta_elucion.jpeg",
+    "image": "img/services/planta_elucion.png",
     "desc": "La planta de elución es una instalación industrial que se utiliza en la industria minera para la recuperación de oro y otros metales preciosos de soluciones cianuradas. Este proceso se realiza mediante la desorción de los metales preciosos de los carbones activados y su posterior recuperación en forma de lingotes de oro."
   },
   {

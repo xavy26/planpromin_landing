@@ -5,8 +5,13 @@ const resp = await fetch(url);
 let gold = 0, silver = 0, copper = 0;
 if (resp.status === 200) {
   const data = await resp.json();
-  gold = data.rates.XAU;
-  silver = data.rates.XAG;
+  console.log({ data });
+  if (data.success === false) {
+    console.error('Error', data.error);    
+  } else {
+    gold = data.rates.XAU;
+    silver = data.rates.XAG;
+  }
 } else {
   console.error('Error', resp.status);
 }

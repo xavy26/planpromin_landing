@@ -6,14 +6,17 @@ import Navbar from '../Navbar.astro'
   <Navbar />
   <HeaderCard />
   
-  <video class="object-cover -z-0 h-full" preload="true" autoplay loop src="videos/header_video.mp4"></video>
+  <video autoplay loop muted src="videos/header_video.mp4"></video>
   
 </header>
 
 <style>
   video {
-    top: 50%;
-    left: 50%;
-    height: max-content;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
   }
 </style>
