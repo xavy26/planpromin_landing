@@ -1,6 +1,6 @@
 ---
 import abouts from "../../data/services.json";
-import ServiceModal from "../ServiceModal.astro";
+import ServiceCard from "../ServiceCard.astro";
 
 interface Props {
   title: string;
@@ -27,7 +27,7 @@ let open = false;
         {
           abouts.map((about) => (
             <div class="swiper-slide">
-              <ServiceModal
+              <ServiceCard
                 title={about.title}
                 description={about.desc}
                 image={about.image}
