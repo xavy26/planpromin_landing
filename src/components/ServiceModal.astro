@@ -8,7 +8,7 @@ interface Props {
 const {title, description, image } = Astro.props;
 ---
 <div x-data="{ open: false }">
-  <div x-on:click="open = true" class="bg-white rounded-2xl shadow-lg cursor-pointer">
+  <div x-on:click="open = false" class="bg-white rounded-2xl shadow-lg cursor-pointer">
     <div class="p-5 z-50">
       <h3 class="font-bold text-lg line-clamp-1">
         { title }
